@@ -1,11 +1,13 @@
-#include <stdio.h>
-#include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
-
+#include <stdio.h>
 /**
- * main - prints if only the number is positive, negative or 0
- * Return: Always 0
- */
+ *  main - the entry point
+ *
+ *Description: the program will assign random number to the n variable
+ *
+ *Return: Always 0 (success)
+*/
 int main(void)
 {
 	int n;
@@ -15,15 +17,15 @@ int main(void)
 
 	if (n > 0)
 	{
-		printf("%d is positive\n", n);
+		printf("%d the number is positive\n", n);
 	}
-	else if (n == 0)
+	else if (n < 0)
 	{
-		printf("%d is zero\n", n);
+		printf("%d the number is negative\n", n);
 	}
 	else
 	{
-		printf("%d is negative\n", n);
+		printf("%d the number is zero\n", n);
 	}
 	return (0);
 }
