@@ -9,10 +9,12 @@ int main(void)
 {
 	int base;
 
+	char ar
+
 	for (base = '0'; base < 10; base++)
-		putchar(base + '0');
-	for (base = 0; base < 6; base++)
-		putchar(base + 'a');
+		putchar(base % 10) + '0');
+	for (ar = 'a'; ar <= 'f'; ar++)
+		putchar(ar);
 	putchar('\n');
 	return (0);
 }
