@@ -1,19 +1,17 @@
 #include <stdio.h>
-
 /**
  * main - program entry point
  *
  * Return: Always 0 (Success)
-*/
-
+ */
 int main(void)
 {
-	char letter;
+	char ar;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-		putchar(letter);
-	for (letter = 'A'; letter <= 'Z'; letter++)
-		puchar(letter);
+	for (ar = 'a'; ar <= 'z'; ar++)
+		putchar(ar);
+	for (ar = 'A'; ar <= 'Z'; ar++)
+		puchar(ar);
 	putchar('\n');
 	return (0);
 }
