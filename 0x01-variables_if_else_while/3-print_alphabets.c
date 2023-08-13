@@ -8,12 +8,12 @@
 
 int main(void)
 {
-	char alphabelt;
+	char letter;
 
-	for (alphabelt = 'a'; alphabelt <= 'z'; alphabelt++)
-		putchar(alphabelt);
-	for (alphabelt = 'A'; alphabelt <= 'Z'; alphabelt++)
-		puchar(alphabelt);
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
+	for (letter = 'A'; letter <= 'Z'; letter++)
+		puchar(letter);
 	putchar('\n');
 	return (0);
 }
