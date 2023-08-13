@@ -4,7 +4,8 @@
  * main - program entry point
  *
  * Return: Always 0 (Success)
- */
+*/
+
 int main(void)
 {
 	char alphabelt;
@@ -13,7 +14,7 @@ int main(void)
 		putchar(alphabelt);
 	for (alphabelt = 'A'; alphabelt <= 'Z'; alphabelt++)
 		puchar(alphabelt);
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
 
