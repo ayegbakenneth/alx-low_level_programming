@@ -7,12 +7,12 @@
  */
 int main(void)
 {
-	char number;
+	int base;
 
-	for (number = '0'; number <= 'f'; number++)
-		putchar(number);
-	for (number = 'a'; number <= 'f'; number++)
-		putchar(number);
+	for (base = '0'; base < 10; base++)
+		putchar(base + '0');
+	for (base = 0; base < 6; base++)
+		putchar(base + 'a');
 	putchar('\n');
 	return (0);
 }
