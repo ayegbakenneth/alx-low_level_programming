@@ -3,19 +3,17 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 when success
+ * Return: Always 0 when successfull
  */
 int main(void)
-{
-	char m;
-	int n;
-	long int o;
-	long long int p;
-	float q;
-printf("size of a char: %lu byte(s)\n", (unsigned long)sizeof(m));
-printf("size of an int: %lu byte(s)\n", (unsigned long)sizeof(n));
-printf("size of a long int: %lu byte(s)\n", (unsigned long)sizeof(o));
-printf("size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(p));
-printf("size of a float: %lu byte(s)\n", (unsigned long)sizeof(q));
-return (0);
+
+	printf("Size of char: %lu byte(s)\n", sizeof(char));
+	printf("Size of short: %lu byte(s)\n", sizeof(short));
+	printf("Size of an int: %lu byte(s)\n", sizeof(int));
+	printf("Size of a long int: %lu byte(s)\n", sizeof(long));
+	printf("Size of a long long int: %lu byte(s)\n", sizeof(long long));
+	printf("Size of a float: %lu byte(s)\n", sizeof(float));
+	printf("Size of double: %lu byte(s) \n", sizeof(double));
+	printf("Size of long double: %lu byte(s)\n", sizeeof(long double));
+	return (0);
 }
