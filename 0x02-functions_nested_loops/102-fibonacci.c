@@ -1,26 +1,26 @@
 #include <stdio.h>
 /**
  * main - the first 50 fibonaaci number
- * Return: 0
+ * Return: 0 if success
  */
 int main(void)
 {
-	long int a, b, c, next;
+	long int i, j, k, next;
 
-	b = 1
-	c = 2
-	for (a = 1; a <= 50; ++a)
+	j = 1;
+	k = 2;
+	for (i = 1; i <= 50; ++i)
 	{
-		if (b != 20365011074)
+		if (j != 20365011074)
 		{
-			printf("%ld, ", b);
+			printf("%ld, ", j);
 		} else
 		{
-			printf("%ld\n", b);
+			printf("%ld\n", j);
 		}
-		next = b + c;
-		b = c;
-		c = next;
+		next = j + k;
+		j = k;
+		k = next;
 	}
 	return (0);
 }
