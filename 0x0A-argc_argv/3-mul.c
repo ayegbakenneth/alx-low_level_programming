@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * _atoi - Strings into integers
  * @s: string to be converted
