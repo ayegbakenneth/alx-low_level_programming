@@ -9,45 +9,40 @@
  */
 void print_all(const char * const format, ...)
 {
-	int h;
-	int length = strlen(format);
-	char *tka_str;
-	char *separt = ", ";
+	int a;
+	int lngth = strlen(format);
+	char *ptr_str;
+	char *dash = ", ";
 	va_list to_ptr;
 
-	h = 0;
+	a = 0;
 	va_start(to_ptr, format);
-
-
-	while (h <= length && format[h])
+	while (a <= lngth && format[a])
 	{
-		if (h == length - 1)
-			separt = "";
-		switch (format[h])
+		if (a == lngth - 1)
+			dash = "";
+		switch (format[a])
 		{
 		case 'c':
-			printf("%c%s", va_arg(to_ptr, int), separt);
+			printf("%c%s", va_arg(to_ptr, int), dash);
 			break;
 		case 'i':
-			printf("%d%s", va_arg(to_ptr, int), separt);
+			printf("%d%s", va_arg(to_ptr, int), dash);
 			break;
 		case 'f':
-			printf("%f%s", va_arg(to_ptr, double), separt);
+			printf("%f%s", va_arg(to_ptr, double), dash);
 			break;
 		case 's':
-			tka_str = va_arg(to_ptr, char *);
-			if (tka_str == NULL)
+			ptr_str = va_arg(to_ptr, char *);
+			if (ptr_str == NULL)
 			{
-				tka_str = "(nil)";
+				ptr_str = "(nil)";
 			}
-			printf("%s%s", tka_str, separt);
+			printf("%s%s", ptr_str, dash);
 			break;
 		}
-		h++;
+		a++;
 	}
 	printf("\n");
-
 	va_end(to_ptr);
-
 }
-
