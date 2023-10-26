@@ -1,4 +1,3 @@
-#include <stddef.h>
 #include "main.h"
 /**
  * binary_to_uint - Converting binary to integer
@@ -7,17 +6,21 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
+	int ken;
 	unsigned int answer = 0;
 
-	if (b == NULL)
+	if (!b)
 		return (0);
-	for (size_t a = 0; b[a] != '\0'; a++)
-
-	if (b[a] == '0')
-		answer = (answer << 1) + 0;
-	else if (b[a] == '1')
-		answer = (answer << 1) + 1;
-	else
-		return (0);
+	for (ken = 0; b[ken] != '\0'; ken++)
+	{
+		if (b[ken] != '0' && b[ken] != '1')
+			return (0);
+	}
+	for (ken = 0; b[ken] != '\0'; ken++)
+	{
+		answer <<= 1;
+		if (b[ken] == '1')
+			answer += 1;
+	}
 	return (answer);
 }
